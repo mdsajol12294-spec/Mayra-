@@ -38,7 +38,7 @@ steps:
   - name: Upload APK
     uses: actions/upload-artifact@v4
     with:
-      name: Mayra!-debug-APK
+      name: Mayra-debug-APK
       path: bin/*.apk
       if-no-files-found: error
       retention-days: 7
