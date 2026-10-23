@@ -1,7 +1,7 @@
 [app]
 
-title = Mira
-package.name = mira
+title = Mayra!
+package.name = mayra
 package.domain = org.example
 
 source.dir = .
