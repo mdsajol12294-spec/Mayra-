@@ -1,6 +1,6 @@
 name: Build Mayra APK
 
-on:
+"on":
 workflow_dispatch:
 push:
 branches:
@@ -25,12 +25,7 @@ steps:
   - name: Install system dependencies
     run: |
       sudo apt-get update
-      sudo apt-get install -y \
-        git zip unzip openjdk-17-jdk \
-        autoconf libtool pkg-config \
-        zlib1g-dev libncurses-dev \
-        libffi-dev libssl-dev cmake \
-        libltdl-dev
+      sudo apt-get install -y git zip unzip openjdk-17-jdk autoconf libtool pkg-config zlib1g-dev libncurses-dev libffi-dev libssl-dev cmake libltdl-dev
 
   - name: Install Buildozer
     run: |
@@ -43,7 +38,7 @@ steps:
   - name: Upload APK
     uses: actions/upload-artifact@v4
     with:
-      name: Mayra-debug-APK
+      name: Mayra!-debug-APK
       path: bin/*.apk
       if-no-files-found: error
       retention-days: 7
